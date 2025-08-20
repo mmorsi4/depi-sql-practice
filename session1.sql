@@ -3,6 +3,7 @@ show tables
 DROP TABLE Students;
 DROP TABLE Courses;
 DROP TABLE Professors;
+DROP TABLE testView;
 
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY AUTO_INCREMENT,
@@ -64,6 +65,11 @@ CREATE VIEW testView AS (
     FROM Students
     WHERE Age > 19
 );
+
+SELECT *
+FROM testView;
+
+DROP TABLE Students;
 
 SELECT *
 FROM testView;
